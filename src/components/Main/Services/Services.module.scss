@@ -1,0 +1,43 @@
+
+.conteiner
+{
+    margin: 100px auto;
+    width: 900px;
+    height: 100vh;
+}
+
+.title
+{
+    background-image: url('./../../../assets/dots.svg');
+    background-repeat: no-repeat;
+    &>h1{
+        padding-top: 10px;
+        padding-left: 10px;
+        font-family: 'Rubik', sans-serif;
+        color: #3b3953;
+        font-size: 27pt;
+        font-weight: 600;
+    }
+}
+
+
+.items
+{
+    display: flex;
+    gap: 20px;
+    &>div{
+        border-radius: 20px;
+        height: 250px;
+        width: 300px;
+        margin-top: 50px;
+        transition: 0.5s;
+        background-color: rgb(249, 215, 76);
+        &:first-child{
+            background-color: rgb(108, 108, 229);
+        }
+        &:last-child{
+            background-color: rgb(249, 123, 139);
+        }
+
+    }
+}
