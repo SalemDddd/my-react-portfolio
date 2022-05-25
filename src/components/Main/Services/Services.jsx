@@ -1,5 +1,7 @@
 import React, { useRef } from "react";
 import Style from "./Services.module.scss";
+import DevelopImg from '../../../assets/web-development.svg'
+
 
 let Services = () => {
   let element = useRef();
@@ -26,7 +28,13 @@ let Services = () => {
             changePositionDown(element);
           }}
           ref={element}
-        ></div>
+        >
+          <img src={DevelopImg} className={Style.icon}/>
+          <h5 className={Style.txt}>Web-developer</h5>
+          <p className={Style.smText}>it. Nam odio veniam expedita aliquam laboriosam corrupti maxime? Adipisci enim ipsam quisquam quae placeat nisi. Ad maxime id at aut vitae magni.</p>
+
+
+        </div>
         <div
           onMouseEnter={() => {
             changePosition(element2);
@@ -35,7 +43,12 @@ let Services = () => {
             changePositionDown(element2);
           }}
           ref={element2}
-        ></div>
+        >
+          <img src={DevelopImg} className={Style.icon}/>
+          <h5 className={Style.txt}>Web-developer</h5>
+          <p className={Style.smText}>it. Nam odio veniam expedita aliquam laboriosam corrupti maxime? Adipisci enim ipsam quisquam quae placeat nisi. Ad maxime id at aut vitae magni.</p>
+
+        </div>
         <div
           onMouseEnter={() => {
             changePosition(element3);
@@ -44,7 +57,14 @@ let Services = () => {
             changePositionDown(element3);
           }}
           ref={element3}
-        ></div>
+        >
+
+<img src={DevelopImg} className={Style.icon}/>
+          <h5 className={Style.txt}>Web-developer</h5>
+          <p className={Style.smText}>it. Nam odio veniam expedita aliquam laboriosam corrupti maxime? Adipisci enim ipsam quisquam quae placeat nisi. Ad maxime id at aut vitae magni.</p>
+
+
+        </div>
       </div>
     </div>
   );
