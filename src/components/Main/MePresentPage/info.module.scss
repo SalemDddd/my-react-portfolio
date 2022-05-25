@@ -1,0 +1,82 @@
+@keyframes slidein {
+    0% {
+        transform: scale(1);
+    }
+  
+    50%
+    {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+  }
+
+
+.center
+{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}  
+
+
+.profile
+{  
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    &>img{
+        border-radius: 50%;
+        margin: auto;
+        height: 200px;
+        width: 200px;
+    }
+    &>h1{
+        margin: auto;
+        font-family: 'Rubik', sans-serif;
+        color: white;
+        font-size: 22pt;
+        margin-top: 25px;
+    }
+    &>p{
+        margin: auto;
+        font-family: 'Rubik', sans-serif;
+        color: white;
+        font-size: 12pt;
+        font-weight: 300;
+        margin-top: 15px;
+    }
+    &>div{
+        margin: auto;
+        margin-top: 25px;
+        display: flex;
+        &>img{
+            cursor: pointer;
+            margin: 0 10px;
+            height: 25px;
+            filter: invert(1);
+        }
+    }
+    &>button{
+        height: 40px;
+        background-color: #ff4c60;
+        font-family: 'Rubik', sans-serif;
+        color: white;
+        font-size: 10pt;
+        font-weight: 500;
+        width: 120px;
+        border-radius: 30px;
+        margin: auto;
+        margin-top: 25px;
+        border: 0 solid;
+        transition: 0.4s;
+        &:hover
+        {
+            animation-duration: 0.5s;
+            animation-name: slidein;
+            cursor: pointer;
+        }
+    }
+}

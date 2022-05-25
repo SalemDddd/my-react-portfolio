@@ -1,0 +1,103 @@
+@keyframes slidein {
+    0% {
+        transform: scale(1);
+    }
+  
+    50%
+    {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+  }
+
+.block
+{
+    height: 400vh;
+}
+
+.conteiner
+{
+    margin: 70px auto;
+    width: 900px;
+}
+.content
+{
+    display: flex;
+    &>img{
+        height: 130px;
+        border-radius: 50%;
+        margin-top: 50px;
+    }
+}
+.CV
+{
+    margin-top: 30px;
+    padding: 20px;
+    margin-left: 130px;
+    display: flex;
+    gap: 15px;
+    flex-direction: row;
+    height: 200px;
+    width: 660px;
+    border-radius: 20px;
+    -webkit-box-shadow: 10px 14px 34px 0px rgba(34, 60, 80, 0.14);
+    -moz-box-shadow: 10px 14px 34px 0px rgba(34, 60, 80, 0.14);
+    box-shadow: 10px 14px 34px 0px rgba(34, 60, 80, 0.14);
+    &>div{
+        width: 300px;
+        &>p{
+            font-family: 'Rubik', sans-serif;
+            color: black;
+            font-size: 11pt;
+        }
+    }
+}
+button{
+    height: 35px;
+    background-color: #ff4c60;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-size: 10pt;
+    font-weight: 500;
+    width: 150px;
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 20px;
+    margin-left: 15px;
+    border: 0 solid;
+    transition: 0.4s;
+    &:hover
+    {
+        animation-duration: 0.5s;
+        animation-name: slidein;
+        cursor: pointer;
+    }
+}
+
+
+
+
+.title
+{
+    background-image: url('./../../../assets/dots.svg');
+    background-repeat: no-repeat;
+    &>h1{ 
+        padding-top: 10px;
+        padding-left: 10px;
+        font-family: 'Rubik', sans-serif;
+        color: #454360;
+        font-size: 25pt;
+    }
+
+}
+
+.progressbars
+{
+    width: 300px;
+    font-family: 'Rubik', sans-serif;
+    color: #454360;
+}
+
+

@@ -1,0 +1,60 @@
+
+.conteiner
+{
+    width: 220px;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    background-color: #353353;
+    border-right: 1px solid rgb(39, 39, 67);
+}
+
+.logoText
+{
+    margin-top: 35px;
+    margin-left: 20px;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+    font-size: 20pt;
+}
+.dot{color: #ff4c60;}
+
+.menu
+{
+    display: flex;
+    margin-top: 120px;
+    margin-left: 30px;
+    flex-direction: column;
+    gap: 15px;
+    &>li{
+        display: flex;
+        &>div{
+            width: 120px;
+            &>a{
+                margin-left: 5px;
+            }
+        }
+    }
+}
+
+.href
+{
+    padding: 0 5px 0;
+    color: white;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    font-size: 11pt;
+    vertical-align: 5px;
+    &:hover
+    {
+        transition: 0.5s;
+        color: #ffd15c
+    }
+}
+
+.active
+{
+    color: #ffd15c;
+}
+
