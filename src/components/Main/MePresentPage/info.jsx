@@ -23,7 +23,7 @@ let Info = () =>
  <div className={Styles2.profile}>
     <img 
     src={avatar} />
-    <h1>Alexandr Seredkin</h1>
+    <h1>Alexandr 1Seredkin</h1>
     <p>I'm Frontend-developer</p>
     <div>
         <img src={instagramImg} onClick={goToMyGit}/>
