@@ -1,11 +1,12 @@
 import React from "react";
 import MenuButtons from "./MenuButtons";
 import Styles from './NavBar.module.scss'
-
+import ScrollContext from '../../App'
 
 
 let NavBar = () => 
 {
+
     return(
         <div className={Styles.conteiner}>
             <div>

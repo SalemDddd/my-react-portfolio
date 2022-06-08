@@ -6,6 +6,7 @@ import telegramImg from '../../../assets/telegram.svg'
 import instagramImg from '../../../assets/instagram.svg'
 import youtubeImg from '../../../assets/youtube.svg'
 import avatar from '../../../assets/avatar.png'
+import Typed from "react-typed"
 
 
 let Info = () =>
@@ -24,7 +25,16 @@ let Info = () =>
     <img 
     src={avatar} />
     <h1>Alexandr Seredkin</h1>
-    <p>I'm Frontend-developer</p>
+    <Typed
+      strings={[
+            "I'm a Full Stack Developer ",
+            "I'am Backend Developer ",
+            "I'am Frontend Developer ",
+          ]}
+          typeSpeed={50}
+          backSpeed={50}
+          loop
+        />
     <div>
         <img src={instagramImg} onClick={goToMyGit}/>
         <img src={youtubeImg} onClick={goToMyGit}/>

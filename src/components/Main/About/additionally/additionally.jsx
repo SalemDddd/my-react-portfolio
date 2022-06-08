@@ -1,12 +1,15 @@
 import React from 'react'
 import Style from "./../About.module.scss";
+import Fade from 'react-reveal/Fade';
 
 let additionally = () =>
 {
 
     return(
         <>
+            <Fade bottom>
             <div className={Style.title}>
+
             <h1>About Me</h1></div>
         <div className={Style.content}>
         <img 
@@ -17,22 +20,28 @@ let additionally = () =>
                 <button> Download CV</button>
             </div>
             <div className={Style.progressbars}>
+
                 <div>
-                <div><p>HTML/CSS</p><p className={Style.procents}>90%</p></div>
-                <progress className={Style.progress1} max="100" value="90"></progress>
+                <div><p>HTML/CSS</p><p className={Style.procents}>98%</p></div>
+                <progress className={Style.progress1} max="100" value="98"></progress>
                 </div>
+                
                 <div>
-                <div><p>HTML/CSS</p><p className={Style.procents}>90%</p></div>
-                <progress className={Style.progress1} max="100" value="90"></progress>
+                <div><p>JavaScript</p><p className={Style.procents}>89%</p></div>
+                <progress className={Style.progress1} max="100" value="89"></progress>
                 </div>
+
                 <div>
-                <div><p>HTML/CSS</p><p className={Style.procents}>90%</p></div>
-                <progress className={Style.progress1} max="100" value="90"></progress>
+                <div><p>React + REDUX</p><p className={Style.procents}>76%</p></div>
+                <progress className={Style.progress1} max="100" value="76"></progress>
                 </div>
+
 
             </div>
         </div>
+
     </div>
+        </Fade>
     </>
     )
 }

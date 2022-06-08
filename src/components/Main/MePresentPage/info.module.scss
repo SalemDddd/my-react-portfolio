@@ -40,13 +40,16 @@
         font-size: 22pt;
         margin-top: 25px;
     }
-    &>p{
+    &>span{
         margin: auto;
-        font-family: 'Rubik', sans-serif;
-        color: white;
-        font-size: 12pt;
-        font-weight: 300;
-        margin-top: 15px;
+        &>span{
+            margin: auto;
+            font-family: 'Rubik', sans-serif;
+            color: white;
+            font-size: 12pt;
+            font-weight: 300;
+            margin-top: 15px;
+        }
     }
     &>div{
         margin: auto;
