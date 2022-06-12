@@ -7,7 +7,7 @@ import instagramImg from '../../../assets/instagram.svg'
 import youtubeImg from '../../../assets/youtube.svg'
 import avatar from '../../../assets/avatar.png'
 import Typed from "react-typed"
-
+import {CanvasSpace, Pt, Group, Line} from 'pts';
 
 let Info = () =>
 { 
@@ -19,8 +19,13 @@ let Info = () =>
     {
         window.location.href = 'https://github.com/SalemDddd'
     }
+
+
+    
  return(    
      <div className={Styles2.center}>
+
+
  <div className={Styles2.profile}>
     <img 
     src={avatar} />

@@ -1,17 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App";
+import ConteinerApp from "./ConteinerApp";
 import reportWebVitals from "./reportWebVitals";
-import "overlayscrollbars/css/OverlayScrollbars.css";
-import { OverlayScrollbarsComponent } from "overlayscrollbars-react";
+import { Provider } from "react-redux";
+import store from "./store/store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
+  <Provider store={store}>
+      <ConteinerApp />
+  </Provider>
 );
-
-
 
 reportWebVitals();

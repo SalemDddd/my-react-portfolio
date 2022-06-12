@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Styles from "./NavBar.module.scss";
 import HomeImg from "../../assets/Home.svg";
 import AboutImg from "../../assets/About.svg";
@@ -10,26 +10,15 @@ import ContactImg from "../../assets/Contact.svg";
 import MePresentPage from "../Main/MePresentPage/MePresentPage";
 import AboutPage from "../Main/About/About";
 
-let MenuButtons = () => {
-  const [pos, setPos] = useState({position : 0});
-  let i =0;
-  useEffect(() => {
-    window.addEventListener("scroll", handleScroll, true);
-  }, []);
-  useEffect(() =>
-  {
-    console.log(pos)
-  }, [pos])
-  let handleScroll = () => {
-    setPos(prev => {return {...prev , position : window.scrollY / window.innerHeight}});
-  };
+
+let MenuButtons = ({positionY}) => {
   return (
     <ul className={Styles.menu}>
       {/* (Pos < 1 ? `${Styles.active}` : null) */}
       <li className={`${Styles.Home} `}>
         <div>
           <img src={HomeImg} height={"20px"} alt="Home Page" />
-          <a href={"#"} onClick={MePresentPage} className={`${Styles.href} ${pos.position < 0.5 ? Styles.active : null}`  }>
+          <a href={"#"} onClick={MePresentPage} className={`${Styles.href} ${positionY < 0.5 ? Styles.active : null}`  }>
             Home
           </a>
         </div>
@@ -41,7 +30,7 @@ let MenuButtons = () => {
           <a
             href={"#AboutPage"}
             onClick={AboutPage}
-            className={`${Styles.href} ${(pos.position >= 0.5)&& (pos.position <1.4) ? Styles.active : null}`}
+            className={`${Styles.href} ${(positionY >= 0.5)&& (positionY <1.4) ? Styles.active : null}`}
           >
             About
           </a>
@@ -51,7 +40,7 @@ let MenuButtons = () => {
       <li className={`${Styles.Services}`}>
         <div>
           <img src={ServicesImg} height={"20px"} alt="Services Page" />
-          <a href="#" className={`${Styles.href} ${(pos.position > 1.4) && (pos.position < 2) ? Styles.active : null}`}>
+          <a href="#" className={`${Styles.href} ${(positionY > 1.4) && (positionY < 2) ? Styles.active : null}`}>
             Services
           </a>
         </div>

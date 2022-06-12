@@ -1,7 +1,6 @@
 import React from "react";
-import MenuButtons from "./MenuButtons";
+import MenuButtonsConteiner from "./MenuButtonsConteiner";
 import Styles from './NavBar.module.scss'
-import ScrollContext from '../../App'
 
 
 let NavBar = () => 
@@ -13,7 +12,7 @@ let NavBar = () =>
                 <h1 className={Styles.logoText}>My Portfolio <span className={Styles.dot}>.</span></h1>
             </div>
             <div>
-                <MenuButtons />
+                <MenuButtonsConteiner />
             </div>
             
         </div>
