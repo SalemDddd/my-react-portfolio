@@ -5,88 +5,51 @@ import code2 from '../../../../assets/code2.svg'
 import coffee from '../../../../assets/coffee.svg'
 import night from '../../../../assets/night.svg'
 import Fade from 'react-reveal/Fade';
-import {useSelector , useDispatch} from 'react-redux'
-import { useRef , useEffect , useState} from 'react';
-import {coffeeAddAC, nightAddAC} from '../../../../store/actionCreatores/scrollAC'
+import CountUp from 'react-countup';
 
 let Content = () =>
 {
-    let [nights , setNights] = useState(0)
-    let [projects , setProjects] = useState(0)
-    let [coffeeCups , setcoffeeCups] = useState(0)
-    let [code , setCode] = useState(0)
-    let positionY = useSelector(state => state.scrollState.position.y)
-    let nightadd , cupsAdding, codeadd, projectsadd;
-    if ((positionY) && (positionY > 0.5))
-    {
-        if (coffeeCups < 5347)
-        {
-            const cupsAdding = setTimeout(() => {
-                setcoffeeCups(prev => prev +3)
-            },10)
-        }
-        if (nights < 3501)
-        {
-            const nightadd = setTimeout(() => {
-                setNights(prev => prev +3)
-            },10)
-        }
-        if (projects < 2)
-        {
-            const projectsadd = setTimeout(() => {
-                setProjects(prev => prev +1)
-            },10)
-        }
-        if (code <= 100)
-        {
-            const codeadd = setTimeout(() => {
-                setCode(prev => prev +1)
-            },10)
-        }
-        else
-        {
-            if (code > 100)
-            {
-                setCode(100)
-            }
-            if (projects > 2)
-            {
-                setCode(2)
-            }
-            clearTimeout(nightadd)
-            clearTimeout(projectsadd)
-            clearTimeout(codeadd)
-            clearTimeout(cupsAdding)
-        }
-    }
     return(
         <div className={Style.achievements} >
             <Fade bottom>
         <div>
-            <img src={codes} />
+            <img src={codes} alt={'fire'}/>
             <div className={Style.item}>
-                <h1>{projects}</h1>
+                <h1 className={Style.projectsH}
+                ><CountUp 
+                    end={1}
+                    diration={5}
+                /></h1>
                 <p>Projects completed</p>
             </div>
         </div>
         <div>
-            <img src={coffee} />
+            <img src={coffee} alt={'coffee'} />
             <div className={Style.item}>
-                <h1>{coffeeCups}</h1>
+                <h1><CountUp 
+                    end={3250}
+                    diration={5}
+                /></h1>
                 <p>Coffee cups</p>
             </div>
         </div>
         <div>
-            <img src={night} />
+            <img src={night} alt={'night'} />
             <div className={Style.item}>
-                <h1>{nights}</h1>
+                <h1><CountUp 
+                    end={1730}
+                    diration={5}
+                /></h1>
                 <p> Nights unslept </p>
             </div>
         </div>
         <div>
-            <img src={code2} />
+            <img src={code2} alt={'code'} />
             <div className={Style.item}>
-                <h1>{code}</h1>
+                <h1><CountUp 
+                    end={100}
+                    diration={5}
+                /></h1>
                 <p>% love for code</p>
             </div>
         </div>

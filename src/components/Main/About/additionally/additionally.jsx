@@ -1,10 +1,10 @@
 import React from 'react'
 import Style from "./../About.module.scss";
 import Fade from 'react-reveal/Fade';
+import CountUp from 'react-countup';
 
 let additionally = () =>
 {
-
     return(
         <>
             <Fade bottom>
@@ -23,7 +23,7 @@ let additionally = () =>
 
                 <div>
                 <div><p>HTML/CSS</p><p className={Style.procents}>98%</p></div>
-                <progress className={Style.progress1} max="100" value="98"></progress>
+                <progress className={Style.progress1} max="100" value='98'></progress>
                 </div>
                 
                 <div>

@@ -1,0 +1,70 @@
+.conteiner {
+  margin: 100px auto;
+  width: 900px;
+  height: 100vh;
+}
+
+.title {
+  background-image: url("./../../../assets/dots.svg");
+  background-repeat: no-repeat;
+}
+
+.title > h1 {
+  padding-top: 10px;
+  padding-left: 10px;
+  font-family: 'Rubik', sans-serif;
+  color: #3b3953;
+  font-size: 27pt;
+  font-weight: 600;
+}
+
+.items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.items > div {
+  border-radius: 20px;
+  height: 250px;
+  width: 300px;
+  margin-top: 50px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #f9d74c;
+}
+
+.items > div:first-child {
+  background-color: #6c8ee5;
+}
+
+.items > div:last-child {
+  background-color: #00f842;
+}
+
+.icon {
+  height: 100px;
+  width: 100px;
+  margin-left: 88px;
+  margin-top: 10px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.txt {
+  font-family: 'Rubik', sans-serif;
+  color: #3b3953;
+  text-align: center;
+  font-size: 15pt;
+}
+
+.smText {
+  font-family: 'Rubik', sans-serif;
+  color: #3b3953;
+  text-align: center;
+  font-size: 10pt;
+  padding: 20px;
+  padding-top: 3px;
+}
+/*# sourceMappingURL=Services.module.css.map */

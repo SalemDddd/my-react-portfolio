@@ -1,3 +1,4 @@
+
 @keyframes slidein {
     0% {
         transform: scale(1);
@@ -138,9 +139,6 @@ button{
 
 .item
 {
-    &>h1{
-        font-size: 20pt;
-    }
     &>p{
         margin-top: 10px;
         font-size: 11pt;
@@ -149,4 +147,10 @@ button{
 
 
 
-
+.projectsH::after
+{
+    font-size: 20pt;
+    font-weight: bold;
+    animation-duration: 0.5s;
+    animation-name: counter2;
+}
